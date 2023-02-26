@@ -85,11 +85,11 @@ const handelExtraSpace=()=>{
      <textarea className="form-control" value={text} id="textBox" rows="8" onChange={handelonChange} style={{backgroundColor:props.mode==='dark'?'#181818':'white' ,color:props.mode==='dark'?'white':'black'}}></textarea>
      
   </div >
-  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1`} onClick={handelUpClick}>Convert to uppercase</button>
-  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1`} onClick={handelLoClick}>Convert to lowercase</button>
-  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1`} onClick={handelClear}> ClearText</button>
-  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1`} onClick={handelCopy}> Copy Text</button>
-  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1`} onClick={handelExtraSpace}>Remove extra space </button>
+  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1 my-1`} onClick={handelUpClick}>Convert to uppercase</button>
+  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1 my-1`} onClick={handelLoClick}>Convert to lowercase</button>
+  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1 my-1`} onClick={handelClear}> ClearText</button>
+  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1 my-1`} onClick={handelCopy}> Copy Text</button>
+  <button className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-1 my-1`} onClick={handelExtraSpace}>Remove extra space </button>
   
 </div>
 <div className="container my-3" style={{color:props.mode==='dark'?'white':'black'}}>

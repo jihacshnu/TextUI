@@ -1,11 +1,9 @@
 import React,{useState} from 'react'
 import './App.css';
-// import About from './components/About';
 
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 
@@ -57,18 +55,14 @@ const showAlert=(message,type)=>{
   return (
     <>
 
-  {/* <Router> */}
+
         <Navbar title="TextUI" mode={Mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
         <Textform showAlert={showAlert} heading="Enter your text" mode={Mode} />
-          {/* <Routes> */}
-            {/* <Route exact path="/about" element={<About />}> </Route> */}
-            {/* <Link className="nav-link" to={'/about'}>About</Link> */}
-            {/* <Route exact path="/" element={<Textform showAlert={showAlert} heading="Enter your text" mode={Mode} />}></Route> */}
-          {/* </Routes> */}
+          
         </div>
-      {/* </Router> */}
+  
 </>
   );
 }
